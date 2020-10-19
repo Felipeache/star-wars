@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Luke",
+            "username": "Luke",
+            "password": "25cd6fb9faccb2f7f7bbb1e4d4a2825e"
+        }
+    ]
+
+}
