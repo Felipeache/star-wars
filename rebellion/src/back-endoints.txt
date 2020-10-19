@@ -1,0 +1,5 @@
+app.use('/users', usersRouter);
+app.use('/planetes', planetsRouter);
+app.use('/personnages', peopleRouter);
+app.use('/vesau', starshipsRouter);
+app.use('/test_api', testAPIRouter)

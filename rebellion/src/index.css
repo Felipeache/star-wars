@@ -1,0 +1,22 @@
+*{
+    margin: 0 auto;
+}
+
+p{
+    margin: 0 auto;
+}
+
+.main-icon{
+    height: 5rem;
+    width: 5rem;
+    justify-self: center;
+}
+.card_img{
+    border-radius: 18%;
+    width: 40vw;
+    margin: 0 auto;
+    transform: translateZ(42px);
+}
+.navbar .ui .container{
+    margin: 1rem;
+}

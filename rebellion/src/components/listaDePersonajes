@@ -1,0 +1,59 @@
+//Creation des trois butons de recherche
+import React from 'react'
+import SearchForm from '../components/SearchForm';
+import Navbar from '../components/Navbar';
+import RandomPeople from '../components/RandomPeople'
+import axios from 'axios';
+
+
+class Index extends React.Component{
+
+
+    constructor(props){
+        super(props);
+        this.state = {
+        data:[]
+        };
+    }
+    
+
+    // call_the_back = async (res) =>{
+    //     let api = await axios.get("http://localhost:9000/personnages")
+    //     //console.log("********************************************************************",api)
+    //     .then(res => res.data)
+    //     .then(res => this.setState({data:res})
+    //     .then(console.log("RESPUESSSSSSTA", res)));
+    // };
+    
+    async componentDidMount(){
+        const response = await axios.get("http://localhost:9000/personnages")
+        const responseData = await response.data.data.results
+        this.setState({data:responseData})
+        console.log("dataaaa", this.state.data)
+                
+    }
+
+    render() {
+        return this.state.data.map( (people) => {  
+                 
+            return(
+                <div className="container">
+                    
+                    <div class="card border-secondary mb-3">
+                        <div class="card-header">{people.name}</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Secondary card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                </div>
+            )
+
+                                        })
+
+   
+    }
+    
+}
+
+export default Index;
