@@ -13,9 +13,9 @@ p{
 }
 .card_img{
     border-radius: 18%;
-    width: 40vw;
+    width: 60vw;
     margin: 0 auto;
-    transform: translateZ(42px);
+    
 }
 .navbar .ui .container{
     margin: 1rem;

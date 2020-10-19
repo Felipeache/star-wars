@@ -1,12 +1,6 @@
 //Creation des trois butons de recherche
 import React from 'react'
-import {Menu, Container} from 'semantic-ui-react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
     return (
@@ -30,15 +24,5 @@ export default function Navbar(){
                       </div>
                     </nav>
             </div>
-         
     );   
 }
-
-{/* <Menu inverted>
-            <Container>
-                <Menu.Item name="people" />        
-                <Menu.Item name="planets" />       
-                <Menu.Item name="starships" />     
-                <Menu.Item name="vehicles" />      
-            </Container>
-        </Menu> */}

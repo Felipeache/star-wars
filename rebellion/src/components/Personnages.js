@@ -62,10 +62,7 @@ const Personnages = props => {
                 </div>
                 
             }
-
-
         </div>
-        
     );
 }
 
