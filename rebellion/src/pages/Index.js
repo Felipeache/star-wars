@@ -3,13 +3,9 @@ import React from 'react'
 import SearchForm from '../components/SearchForm';
 import Navbar from '../components/Navbar';
 import RandomPeople from '../components/RandomPeople'
-import axios from 'axios';
 
 
 class Index extends React.Component{
-
-    const 
-
 
     constructor(props){
         super(props);
@@ -17,7 +13,6 @@ class Index extends React.Component{
             data:[]
         };
     }
-        
     render() {     
             return(
                 <div>

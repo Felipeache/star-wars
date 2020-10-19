@@ -4,9 +4,8 @@ import Navbar from '../components/Navbar'
 
 const ShowStarships = props => (
   <div className="container">
-  <Navbar />
-  <h1>SHOW STARSHIPS</h1>
-  <SearchForm/>
+    <Navbar />
+    <SearchForm/>
   </div>
     
 )

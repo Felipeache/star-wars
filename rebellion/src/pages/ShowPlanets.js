@@ -7,10 +7,10 @@ import Paginator from '../components/Paginator'
 
 const ShowPlanets = props => (
     <div className="container">
-    <Navbar />
-    <SearchForm/>
-    <Planets />
-    <Paginator />
+        <Navbar />
+        <SearchForm/>
+        <Planets />
+        <Paginator />
     </div>
     
 )

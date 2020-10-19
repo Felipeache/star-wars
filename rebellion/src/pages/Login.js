@@ -12,7 +12,6 @@ class Login extends Component{
             password:""
         }
     }
-
     get_values = async (e) => {
         await this.setState({
             form: {
@@ -22,7 +21,6 @@ class Login extends Component{
         })
         //console.log(this.state.form)
     }
-
     DoLogin = async (e) =>{
         await axios.get(auth_call, {
             params:
@@ -45,7 +43,6 @@ class Login extends Component{
                 alert('Les espions du seigneur Vader sont partout!');
             })
     }
-
     render() {
         return(
             <div className="container">
@@ -82,14 +79,8 @@ class Login extends Component{
                                 </div>
                             <button type="button" onClick={ () => this.DoLogin()} class="btn btn-outline-success">Login</button>
                         </form>
-                
-                            
-
-                    
                 </div>
             </div>
- 
-
         )
     }
 }
