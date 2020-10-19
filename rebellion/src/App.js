@@ -3,7 +3,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Character_info from './components/Character_info'
 import SearchForm from './components/SearchForm';
 
-const api_url_ = "https://swapi.dev/api/people/";
+const api_url_ = "http://localhost:9000/";
 
 class App extends React.Component{
 constructor(props){
