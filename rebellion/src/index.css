@@ -11,12 +11,22 @@ p{
     width: 5rem;
     justify-self: center;
 }
+.card{
+    max-width: 60vw;
+}
 .card_img{
     border-radius: 18%;
     width: 60vw;
+    max-width: 30vw;
     margin: 0 auto;
     
 }
 .navbar .ui .container{
     margin: 1rem;
+}
+
+.list-group-flush>.list-group-item {
+    margin: 1px;
+    display: flex;
+    justify-content: center;
 }

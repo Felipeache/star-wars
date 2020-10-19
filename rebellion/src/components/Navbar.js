@@ -12,13 +12,13 @@ export default function Navbar(){
                                   <a className="nav-link" > <Link to="/index">Home</Link>  <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link"> <Link to="/personnages">Personnage</Link>   </a>
+                                  <a className="nav-link"> <Link to="/personnages">Personnages</Link>   </a>
                                 </li>
                                 <li className="nav-item">
                                   <a className="nav-link"> <Link to="/starships">Starships</Link>     </a>
                                 </li>
                                 <li className="nav-item">
-                                  <a className="nav-link"> <Link to="/planetes">Planetes</Link>  </a>
+                                  <a className="nav-link"> <Link to="/planetes">Planètes</Link>  </a>
                                 </li>
                         </ul>
                       </div>

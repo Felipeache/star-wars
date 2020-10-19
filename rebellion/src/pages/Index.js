@@ -14,35 +14,18 @@ class Index extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-        data:[]
+            data:[]
         };
     }
-    
-
-    get_people = async (res) =>{
-        let api = await axios.get("http://localhost:9000/personnages")
-        //console.log("********************************************************************",api)
-        .then(res => res.data.data.results)
-        .then(res => this.setState({data:res})
-        .then(console.log("RESPUESSSSSSTA", res)));
-    };
-    
-     async componentDidMount(){
-    //     const response = await axios.get("http://localhost:9000/personnages")
-    //     const responseData = await response.data.data.results
-    //     this.setState({data:responseData})
-    //     console.log("dataaaa", this.state.data)
-                
-     }
-
+        
     render() {     
             return(
-                <div className="container">
-                    <Navbar />
-                    <SearchForm query_={this.get_people}/>
-                    <RandomPeople />
-
-                    
+                <div>
+                    <div className="container">
+                        <Navbar />
+                        <SearchForm query_={this.get_people}/>
+                        <RandomPeople />
+                    </div>
                 </div>
             )
     }

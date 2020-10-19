@@ -28,7 +28,6 @@ const SearchForm = (props) => (
                     </div>
                 </div>
             </form>
-            <button type="button" class="btn btn-outline-success">Call someone!</button>
         </div>
     </div>
 );
